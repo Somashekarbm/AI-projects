@@ -7,3 +7,9 @@ to run the ollama " ollama serve" , to list models "ollama list" ,to run a model
 
 
 ![Screenshot 2025-03-14 211750](https://github.com/user-attachments/assets/14047efb-7022-4de6-a376-0a0630632100)
+
+
+![Screenshot 2025-03-14 211815](https://github.com/user-attachments/assets/e98bdaa1-3c16-4338-b8b9-58dc9b0cd49f)
+
+
+
