@@ -17,10 +17,10 @@ export default function Chatbot() {
         "Why should we hire you?",
         "Describe a challenging project you've worked on.",
     ];
-
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
     // Check Backend Status on Mount
     useEffect(() => {
-        axios.get("http://127.0.0.1:8080/")
+        axios.get(`${backendUrl}`)
             .catch(() => setError("Backend is not reachable. Ensure it's running."));
     }, []);
 
@@ -30,7 +30,7 @@ export default function Chatbot() {
         setError("");
 
         try {
-            const response = await axios.post("http://127.0.0.1:8080/evaluate", {
+            const response = await axios.post(`${backendUrl}/evaluate`, {
                 question: question,
                 answer: answer,
             });
