@@ -1,3 +1,12 @@
+# requirements.txt-
+
+# langchain
+# openai
+# huggingface_hub
+# python-dotenv
+# streamlit
+
+
 ## Conversational Q&A Chatbot
 import streamlit as st
 import os
